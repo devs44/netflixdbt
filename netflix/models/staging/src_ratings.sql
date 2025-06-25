@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized = 'incremental'
+    )
+}}
+
+
 with raw_ratings as ( 
     select * from MOVIELENS.DEV.raw_ratings
 )
