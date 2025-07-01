@@ -1,5 +1,5 @@
 WITH raw_movies as(
-    SELECT * FROM MOVIELENS.DEV.raw_movies
+    SELECT * FROM {{ sources ('netflix','r_movies') }}
 )
 
 SELECT 
