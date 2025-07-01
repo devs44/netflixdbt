@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_movies
+    description: Dimension table for cleansed movie metadata
+    columns:
+      - name: movie_id
+        description: primary key of the movie
+        test:
+          - not null
+          - unique
+      - name: movie_title
+        description: movie movie_title
+        test:
+          - not null
+    
+   
